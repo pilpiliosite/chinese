@@ -1,8 +1,11 @@
-- name: Home
+- name: 网站首页
   path: index.html
-- name: Tours
+- name: 旅游行程
   path: tours.html
-- name: About
+- name: 关于他们
   path: about.html
-- name: Contact
+- name: 联系我们
   path: contact.html
+- name: <a href="https://pilpil.io"><span class='flag-icon flag-icon-gb'></span></a>
+- name: <a href="https://pilpil.io/cz"><span class='flag-icon flag-icon-cz'></span></a>
+
