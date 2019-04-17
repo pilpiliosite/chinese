@@ -31,7 +31,6 @@ principles_right:
 ---
 
 
-<div class="image-wrapper" style="background-image: url({{site.url}}/{{slide.image}});"></div>
 
 <div class="full no-padding">
   <div id="slides" class="fullscreen">
@@ -46,11 +45,6 @@ principles_right:
                   <div class="two spacing"></div>
                   <h1>{{slide.title}}</h1>
                   <p>{{slide.tagline}}</p>
-                {% else %}
-                  <div class="image-wrapper" style="background-image: url({{site.url}}/{{slide.image_top}});"></div>
-                  <div class="image-wrapper arrows" style="background-image: url({{site.url}}/{{slide.image_bottom}});"></div>
-                  <div class="three spacing"></div>
-                  <h1>{{slide.title}}</h1>
                 {% endif %}
               </div>
             </div>
@@ -59,10 +53,7 @@ principles_right:
         </div>
       {% endfor %}
     </div>
-    <nav class="slides-navigation">
-      <a href="#" class="next"><i class="icon-arrows-slim-right"></i></a>
-      <a href="#" class="prev"><i class="icon-arrows-slim-left"></i></a>
-    </nav>
+  
   </div>
 </div>
 <div class="full">
