@@ -2,14 +2,10 @@
 layout: default
 section_id: home
 slides:
-- layout: default
-  title: Welcome
+- title: Welcome
   image: images/3.png
   background: images/1.jpg
-- layout: alt
-  title: Spiced Up Tours
-  image_bottom: images//arrows.png
-  background: images/7a.jpg
+
 
 principles_left:
 - title: 精彩旅程
@@ -30,8 +26,6 @@ principles_right:
 
 ---
 
-
-
 <div class="full no-padding">
   <div id="slides" class="fullscreen">
     <div class="slides-container">
@@ -40,12 +34,10 @@ principles_right:
           <div class="slide-info">
             <div class="row">
               <div class="large-10 large-centered columns">
-                {% if slide.layout == 'default' %}
                   <div class="image-wrapper" style="background-image: url({{site.url}}/{{slide.image}});"></div>
                   <div class="two spacing"></div>
                   <h1>{{slide.title}}</h1>
                   <p>{{slide.tagline}}</p>
-                {% endif %}
               </div>
             </div>
           </div>
@@ -53,10 +45,15 @@ principles_right:
         </div>
       {% endfor %}
     </div>
-  
+    <nav class="slides-navigation">
+      <a href="#" class="next"><i class="icon-arrows-slim-right"></i></a>
+      <a href="#" class="prev"><i class="icon-arrows-slim-left"></i></a>
+    </nav>
   </div>
 </div>
 <div class="full">
+  <div class="image-wrapper" style="background-image: url({{site.url}}/{{slide.image}});"></div>
+
   <div class="section-title">
     <div class="row">
       <div class="medium-10 medium-centered columns">
