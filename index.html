@@ -2,62 +2,61 @@
 layout: default
 section_id: home
 slides:
-- title: Welcome
+- layout: default
+  title: Welcome
   image: images/3.png
   background: images/1.jpg
-
+- layout: alt
+  title: Spiced Up Tours
+  image_bottom: images//arrows.png
+  background: images/7a.jpg
 
 principles_left:
 - title: 精彩旅程
   content: Pilpili的意思是胡椒。我们每一次的旅行，都会带您品尝超越普通旅行的额外风味。无论您是热爱大自然、热爱传统音乐、还是热爱政治，我们都能满足您的兴趣爱好。
-  icon: icon-basic-map
+  icon: fas fa-pepper-hot fa-sm
+principles_left1:
 - title: 私人定制
   content: 我们希望旅行能满足您的需求和期望。如果你想参观一个行程之外地方，或者想体验特殊的经历，亦或是组织商务旅行，请随时联系我们，我们将竭尽全力为您私人定制最佳的方案！
-  icon: icon-arrows-shrink
+  icon: fas fa-location-arrow fa-sm
 principles_right:
 - title: 社会负责
   content: 为了确保游客和当地社区都能从格鲁吉亚旅游业发展中受益。我们与格鲁吉亚当地单位合作，与当地人住在一起，确保所有行程没有坑骗和宰客。
-  icon: icon-basic-heart
+  icon: fas fa-hand-holding-heart fa-sm
+principles_right1:
 - title: 环保意识
   content: 大自然是格鲁吉亚最大的财富，应当竭尽所能保护她。“不留痕迹”是我们遵守的重要原则，尤其是在山区。我们确保所有行程尊重自然环境。
-  icon: icon-basic-world
-
-
-
+  icon: fab fa-pagelines fa-sm
 ---
 
-<div class="full no-padding">
-  <div id="slides" class="fullscreen">
-    <div class="slides-container">
-      {% for slide in page.slides %}
-        <div class="slide">
-          <div class="slide-info">
-            <div class="row">
-              <div class="large-10 large-centered columns">
-                  <div class="image-wrapper" style="background-image: url({{site.url}}/{{slide.image}});"></div>
-                  <div class="two spacing"></div>
-                  <h1>{{slide.title}}</h1>
-                  <p>{{slide.tagline}}</p>
-              </div>
-            </div>
-          </div>
-          <img src="{{site.url}}/{{slide.background}}" alt="">
-        </div>
-      {% endfor %}
-    </div>
-    <nav class="slides-navigation">
-      <a href="#" class="next"><i class="icon-arrows-slim-right"></i></a>
-      <a href="#" class="prev"><i class="icon-arrows-slim-left"></i></a>
-    </nav>
-  </div>
-</div>
-<div class="full">
-  <div class="image-wrapper" style="background-image: url({{site.url}}/{{slide.image}});"></div>
+<div class="full centered-text back">
+    <div class="four spacing"></div>
+    <div class="section-title">
+      <div class="row">
+        <div class="medium-10 medium-centered columns ">
+            <div class="four spacing"></div>
+            <img src="/images/3.png" class="wow slideInDown">
+            <div class="two spacing"></div>
+          <h1 class="wow slideInUp white">Welcome</h1>
 
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-9 medium-centered columns">
+        <div class="header-quote">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <div class="two spacing"></div>
+  </div>
+
+<div class="full">
   <div class="section-title">
     <div class="row">
       <div class="medium-10 medium-centered columns">
-        <h2>旅游行程        </h2>
+        <h2>Tours</h2>
       </div>
     </div>
   </div>
@@ -68,10 +67,8 @@ principles_right:
           <a href="HikinginSvaneti.html" class="work">
             <img src="images/HikinginSvaneti/Mestia.jpg" alt="">
             <div class="info">
-              <h3>斯瓦涅季远足
-              </h3>
-              <p>探险游
-                - 5 天</p>
+              <h3>Hiking in Svaneti</h3>
+              <p>Adventure - 5 Days</p>
             </div>
           </a>
         </div>
@@ -81,9 +78,8 @@ principles_right:
           <a href="luxuriousculturaltour.html" class="work">
           <img src="images/luxuriousculturaltour/Tbilisi.jpg" alt="">
           <div class="info">
-            <h3>豪华文化旅游
-            </h3>
-            <p>VIP游 - 7 天</p>
+            <h3>Luxurious Cultural Tour</h3>
+            <p>VIP Tour - 7 Days</p>
           </div>
         </a>
         </div>
@@ -93,20 +89,69 @@ principles_right:
           <a href="mountainsandvalleys.html" class="work">
             <img src="images/mountainsandvalleys/Borjomi.jpg" alt="">
             <div class="info">
-              <h3>游览山川峡谷
-              </h3>
-              <p>文化游
-                - 8 天</p>
+              <h3>Mountains and Valleys</h3>
+              <p>Cultural - 8 Days</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="large-4 columns">
+        <div class="work-wrapper">
+          <a href="Tusheti-KhevsuretiPass.html" class="work">
+            <img src="images/Tusheti-KhevsuretiPass/Omalo.jpg" alt="">
+            <div class="info">
+              <h3>Tushietti-Khevsureti Pass</h3>
+              <p>Adventure - 6 Days</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="large-4 columns">
+        <div class="work-wrapper">
+          <a href="wineandchurchesofeasterngeorgia.html" class="work">
+            <img src="images/wineandchurchesofeasterngeorgia/Signagi.jpg" alt="">
+            <div class="info">
+              <h3>Wine and Churches of Eastern Georgia</h3>
+              <p>Cultural - 5 Days</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="large-4 columns">
+        <div class="work-wrapper">
+          <a href="paythevisittoprometheus.html" class="work">
+            <img src="images/paythevisittoprometheus/11c.jpg" alt="">
+            <div class="info">
+              <h3>Climb Mt. Kazbegi</h3>
+              <p>Adventure - 8 Days</p>
             </div>
           </a>
         </div>
       </div>
     </div>
     <div class="centered-text">
-          <a href="{{site.url}}/cn/tours.html" class="button brown boxed">发现更多游览</a>
+          <a href="{{site.url}}/tours.html" class="button brown boxed">Discover More Tours</a>
         </div>
     </div>
+    <div class="four spacing"></div>
 
+    <div class="full centered-text tree">
+      <div class="section-title">
+        <div class="row">
+          <div class="medium-10 medium-centered columns">
+              <h4 class="wow slideInUp white"> Didn’t find what you were looking for?</h4>
+              <div class="two spacing"></div>
+
+            <h2 class="wow slideInUp white">Get a customized tour and the unique experience.</h2>
+          </div>
+          <div class="four spacing"></div>
+
+          <div class="centered-text">
+                <a href="{{site.url}}/contact.html" class="button boxed">Contact us</a>
+              </div>
+        </div>
+      </div>
+    </div>
 <div class="full centered-text">
   <div class="section-title">
     <div class="row">
@@ -117,9 +162,31 @@ principles_right:
   </div>
 </div>
 
-<div class="row">
-  <div class="large-6 columns">
+  <div class="large-3 columns">
     {% for principle in page.principles_left %}
+    <div class="quote reverse wow slideInLeft" class="wow" data-wow-delay="{{ 0.2 | times:forloop.index0 }}s">
+        <div class="row">
+          <div class="large-12 columns">
+              <div class="principle">
+                  <div class=" centered-text">
+                  <i class="{{principle.icon}}"author"></i>
+                </div>
+                <div class=" centered-text">
+
+                                 <i class=>{{principle.title}}</i>
+                </div>
+
+                </div>
+          </div>
+          <div class="small-12 columns">
+            <p>{{principle.content}}</p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="large-3 columns">
+    {% for principle in page.principles_left1 %}
     <div class="quote reverse wow slideInLeft" class="wow" data-wow-delay="{{ 0.2 | times:forloop.index0 }}s">
         <div class="row">
           <div class="large-12 columns">
@@ -141,7 +208,7 @@ principles_right:
       </div>
     {% endfor %}
   </div>
-  <div class="large-6 columns">
+  <div class="large-3 columns">
     {% for principle in page.principles_right %}
       <div class="quote reverse wow slideInRight" class="wow" data-wow-delay="{{ 0.2 | times:forloop.index0 }}s">
           <div class="row">
@@ -164,5 +231,28 @@ principles_right:
           </div>
     {% endfor %}
   </div>
-</div>
+  <div class="large-3 columns">
+    {% for principle in page.principles_right1 %}
+      <div class="quote reverse wow slideInRight" class="wow" data-wow-delay="{{ 0.2 | times:forloop.index0 }}s">
+          <div class="row">
+              <div class="large-12 columns">
+                  <div class="principle">
+                      <div class=" centered-text">
+                          <i class="{{principle.icon}}"author"></i>
+                        </div>
+                        <div class=" centered-text">
+
+                          <i class=>{{principle.title}}</i>
+                        </div>
+
+                        </div>
+                  </div>
+              <div class="small-12 columns">
+                <p>{{principle.content}}</p>
+              </div>
+            </div>
+          </div>
+    {% endfor %}
+  </div>
+
 </div>
