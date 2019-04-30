@@ -1,10 +1,10 @@
 - name: 网站首页
-  path: cn/index.html
+  path: /index.html
 - name: 旅游行程
-  path: cn/tours.html
+  path: /tours.html
 - name: 关于他们
-  path: cn/about.html
+  path: /about.html
 - name: 联系我们
-  path: cn/contact.html
+  path: /contact.html
 - name: <a href="https://pilpil.io"><span class='flag-icon flag-icon-gb'></span></a>
 - name: <a href="https://pilpil.io/cz"><span class='flag-icon flag-icon-cz'></span></a>
